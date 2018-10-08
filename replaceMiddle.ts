@@ -14,7 +14,7 @@ export function replaceMiddle(numItemsToPreserveAtEachEnd, newValues: any[], arr
 		' at each end must be at least 1');
 	if ((numItemsToPreserveAtEachEnd * 2) > array.length) {
 		throw new Error('The number of bookend items to preserve multiplied by 2' +
-			' exceeds the length of the array. This is now allowed.');
+			' exceeds the length of the array. This is not allowed.');
 	}
 	let numToRemove = array.length - (numItemsToPreserveAtEachEnd * 2);
 

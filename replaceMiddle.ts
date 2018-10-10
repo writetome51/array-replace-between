@@ -1,5 +1,7 @@
 import { errorIfNotInteger } from 'basic-data-handling/errorIfNotInteger';
-import { errorIfValuesAreNotArrays }  from 'error-if-values-are-not-arrays';
+import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
+import { _replaceAdjacentItems }
+	from '@writetome51/array-replace-adjacent-items/_replaceAdjacentItems';
 
 
 // Example: if array is [1,2,3,4,5,6,7] , and you call replaceMiddle(2, [9,10], array) ,
@@ -8,8 +10,9 @@ import { errorIfValuesAreNotArrays }  from 'error-if-values-are-not-arrays';
 // it's replacing.
 
 export function replaceMiddle(numItemsToPreserveAtEachEnd, newValues: any[], array): void {
-	errorIfValuesAreNotArrays([newValues, array]);
 	errorIfNotInteger(numItemsToPreserveAtEachEnd);
+	errorIfNotArray(array);
+
 	if (numItemsToPreserveAtEachEnd < 1) throw new Error('The number items to preserve' +
 		' at each end must be at least 1');
 	if ((numItemsToPreserveAtEachEnd * 2) > array.length) {
@@ -18,5 +21,5 @@ export function replaceMiddle(numItemsToPreserveAtEachEnd, newValues: any[], arr
 	}
 	let numToRemove = array.length - (numItemsToPreserveAtEachEnd * 2);
 
-	array.splice(numItemsToPreserveAtEachEnd, numToRemove, ...newValues);
+	_replaceAdjacentItems(numItemsToPreserveAtEachEnd, numToRemove, newValues, array);
 }

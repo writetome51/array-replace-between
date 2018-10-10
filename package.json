@@ -18,6 +18,6 @@
   "devDependencies": {},
   "dependencies": {
     "basic-data-handling": "latest",
-    "error-if-values-are-not-arrays": "latest"
+    "@writetome51/array-replace-adjacent-items": "latest"
   }
 }

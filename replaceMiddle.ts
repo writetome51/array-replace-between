@@ -10,16 +10,22 @@ import { _replaceAdjacentItems }
 // it's replacing.
 
 export function replaceMiddle(numItemsToPreserveAtEachEnd, newValues: any[], array): void {
-	errorIfNotInteger(numItemsToPreserveAtEachEnd);
-	errorIfNotArray(array);
-
-	if (numItemsToPreserveAtEachEnd < 1) throw new Error('The number items to preserve' +
-		' at each end must be at least 1');
-	if ((numItemsToPreserveAtEachEnd * 2) > array.length) {
-		throw new Error('The number of bookend items to preserve multiplied by 2' +
-			' exceeds the length of the array. This is not allowed.');
-	}
+	_checkInputValidity();
 	let numToRemove = array.length - (numItemsToPreserveAtEachEnd * 2);
 
+	// newValues is validated as array here:
 	_replaceAdjacentItems(numItemsToPreserveAtEachEnd, numToRemove, newValues, array);
+
+
+	function _checkInputValidity(){
+		errorIfNotInteger(numItemsToPreserveAtEachEnd);
+		errorIfNotArray(array);
+
+		if (numItemsToPreserveAtEachEnd < 1) throw new Error('The number items to preserve' +
+			' at each end must be at least 1');
+		if ((numItemsToPreserveAtEachEnd * 2) > array.length) {
+			throw new Error('The number of bookend items to preserve multiplied by 2' +
+				' exceeds the length of the array. This is not allowed.');
+		}
+	}
 }

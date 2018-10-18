@@ -1,8 +1,8 @@
 {
-  "name": "@writetome51/array-replace-middle",
-  "version": "1.0.2",
+  "name": "@writetome51/array-replace-between",
+  "version": "1.0.0",
   "description": "This function replaces items in the middle of the array",
-  "main": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,9 @@
   ],
   "author": "Steve Thompson",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "@writetome51/arrays-match": "latest"
+  },
   "dependencies": {
     "basic-data-handling": "latest",
     "@writetome51/array-replace-adjacent-items": "latest"

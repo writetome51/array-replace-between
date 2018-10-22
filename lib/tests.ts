@@ -1,5 +1,5 @@
 import { replaceBetween } from './replaceBetween';
-import { arraysMatch } from '@writetome51/arrays-match/arraysMatch';
+import { arraysMatch } from '@writetome51/arrays-match';
 
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8];

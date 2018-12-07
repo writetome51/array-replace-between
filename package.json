@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-replace-between",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This function replaces items in the middle of the array",
   "main": "index.js",
   "scripts": {
@@ -16,10 +16,10 @@
   "author": "Steve Thompson",
   "license": "MIT",
   "devDependencies": {
-    "@writetome51/arrays-match": "latest"
+    "@writetome51/arrays-match": "~1.0.4"
   },
   "dependencies": {
-    "basic-data-handling": "latest",
-    "@writetome51/array-replace-adjacent-items": "latest"
+    "basic-data-handling": "~1.0.13",
+    "@writetome51/array-replace-adjacent-items": "~1.0.2"
   }
 }

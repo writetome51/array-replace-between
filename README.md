@@ -12,15 +12,11 @@ arr = [1, 2, 3, 4, 5];
 replaceBetween(1, [20, 30], arr);
 // arr is now [1, 20, 30, 5]
 
-// At this point, if you call  replaceBetween(2, newItems, arr) , you'll get an error.  
-// This is because there's nothing in-between 2 items at each end.  This function isn't 
-// intended for simply inserting new items without replacing anything.
-
 // You can replace something with nothing. Example:
 
-arr = [ 1, 2, 3, 4 ];
-replaceBetween(1, [], arr);
-// arr is now [ 1, 4 ]
+arr = [ 1, 2, 3, 4, 5, 6 ];
+replaceBetween(2, [], arr);
+// arr is now [ 1, 2, 5, 6 ]
 ```
 
 ## Installation

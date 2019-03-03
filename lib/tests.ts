@@ -1,4 +1,4 @@
-import { replaceBetween } from './replaceBetween';
+import { replaceBetween } from '.';
 import { arraysMatch } from '@writetome51/arrays-match';
 
 

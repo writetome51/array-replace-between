@@ -1,7 +1,6 @@
 import { errorIfNotInteger } from 'basic-data-handling/errorIfNotInteger';
 import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
-import { _replaceAdjacentItems }
-	from '@writetome51/array-replace-adjacent-items/_replaceAdjacentItems';
+import { _replaceAdjacentItems } from '@writetome51/array-replace-adjacent-items';
 
 
 // Example: if array is [1,2,3,4,5,6,7] , and you call replaceBetween(2, [9,10], array) ,

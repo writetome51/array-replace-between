@@ -16,6 +16,7 @@
   ],
   "author": "Steve Thompson",
   "license": "MIT",
+  "homepage": "https://github.com/writetome51/array-replace-between#readme",
   "devDependencies": {
     "@writetome51/arrays-match": "~1.0.5"
   },

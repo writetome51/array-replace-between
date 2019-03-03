@@ -1,1 +1,5 @@
-export declare function replaceBetween(numItemsToPreserveAtEachEnd: any, newValues: any[], array: any): void;
+export declare function replaceBetween(
+	numItemsToPreserveAtEachEnd: number,
+	newValues: any[],
+	array: any[]
+): void;

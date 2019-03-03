@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var errorIfNotInteger_1 = require("basic-data-handling/errorIfNotInteger");
 var errorIfNotArray_1 = require("basic-data-handling/errorIfNotArray");
-var _replaceAdjacentItems_1 = require("@writetome51/array-replace-adjacent-items/_replaceAdjacentItems");
+var array_replace_adjacent_items_1 = require("@writetome51/array-replace-adjacent-items");
 // Example: if array is [1,2,3,4,5,6,7] , and you call replaceBetween(2, [9,10], array) ,
 // the result will be [1,2,9,10,6,7] .  It preserves the first 2 items and
 // the last 2.  newValues doesn't have to be same length as number of items
@@ -11,7 +11,7 @@ function replaceBetween(numItemsToPreserveAtEachEnd, newValues, array) {
     _checkInputValidity();
     var numToRemove = array.length - (numItemsToPreserveAtEachEnd * 2);
     // newValues is validated as array here:
-    _replaceAdjacentItems_1._replaceAdjacentItems(numItemsToPreserveAtEachEnd, numToRemove, newValues, array);
+    array_replace_adjacent_items_1._replaceAdjacentItems(numItemsToPreserveAtEachEnd, numToRemove, newValues, array);
     function _checkInputValidity() {
         errorIfNotInteger_1.errorIfNotInteger(numItemsToPreserveAtEachEnd);
         errorIfNotArray_1.errorIfNotArray(array);

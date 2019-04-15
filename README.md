@@ -1,6 +1,6 @@
 # replaceBetween(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numItemsToPreserveAtEachEnd,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newValues,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): void
 
-Replaces everything between `numItemsToIgnoreAtEachEnd` with `newValues` in `array`.
+Replaces everything between `numItemsToPreserveAtEachEnd` with `newValues` in `array`.
 
 ## Examples
 ```
